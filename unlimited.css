@@ -1,0 +1,419 @@
+@import url("reset.css");
+*{
+    box-sizing: border-box;
+  }
+
+body{
+    
+    background-color: #121212;
+    
+    
+}
+a{
+    text-decoration:none;
+}
+
+.wrapper {
+	width: 1200px;
+    margin: 0 auto;
+    background-color: #121212;
+    text-decoration:none;
+    font-family: exo,helvetica neue,helvetica,arial,serif!important;
+    
+}
+.logoBar{
+    overflow: hidden;
+    height: 87px;
+    background-color:#121212
+}
+.logo {
+    float: left;
+    padding-top: 10px;
+    padding-left: 150px;
+    
+}
+
+
+.logo img{
+    width: 70px;
+    height: 70px;
+}
+.logoBarRight {
+    float: right;
+    /* display: inline; */
+    overflow: hidden;
+}
+.logoBarRight{
+    padding-right: 150px;
+    padding-top: 30px;
+
+}
+
+.logoBarRight li{
+    padding-right: 20px;
+    display: inline;
+    text-decoration:none;
+    
+    
+}
+.logoBarRight li a {
+    color:white;
+    text-decoration:none;
+
+}
+
+.logoBarRight botton{
+    background-color: #f56600; /* Green */
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+
+.navbar{
+    background-color: #f56600;
+    text-align: center;
+    height: 45px;
+}
+
+.navbar ul{
+    padding-top: 15px;
+    display: inline-block;
+}
+
+.navbar li{ 
+    display: inline-block;
+    padding-right: 30px;
+    
+}
+
+.navbar li a{
+    color:white;
+    font-size: 15px;
+}
+
+.banner img{
+    width:100%;
+    height:390px;
+    display:block;
+}
+/* breadcrumb */
+
+.breadcrumb{
+    background-color:#121212;
+    color:white;
+    height: 50px;
+    font-size:12px;
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+}
+
+.blog{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #121212;
+    color:white;
+    /* border: 1px solid pink; */
+
+}
+
+.unbanner{
+    margin: 0 auto;
+}
+
+.blog .title{
+    /* border: 1px solid white; */
+    margin-bottom: 50px;
+}
+.upper{
+    height: 700px;
+}
+
+.uppertitle{
+    font-size:32px;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+
+
+.upperleft{
+    /* border: 5px solid green; */
+    display: inline-block;
+    width: calc(100% - 570px - 10px);
+    vertical-align: top;
+}
+
+
+.upperleftP{
+    width: 450px;
+    padding-bottom: 100px;
+}
+
+
+button {
+    background-color: #f56600; /* Green */
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.blog .title h1{
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.bannertext {
+    padding-top: 30px;
+    text-align: center;
+}
+.bannerButton{
+    text-align: center;
+    padding-top: 50px;
+}
+.contentHeading{
+    text-align: left;
+    padding-bottom: 40px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.upperight{
+    /* border: 5px solid blue; */
+    display: inline-block;
+    width: 520px;
+    margin-left: 10px;
+   
+}
+
+
+
+.upperight .asidepic{
+    width: 205px;
+    height: 420px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.upperight .asidepic img{
+    max-width: 100%;
+}
+
+.upperight .asidetext{
+    display: inline-block;
+    overflow: hidden; /* 超過範圍隱藏 */
+    width:300px;
+    padding-left: 20px;
+   
+}
+
+.upperight .asidetext ul li{
+    padding-bottom: 20px;
+    
+}
+
+.upperight .asidetext .icon1{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.upperight .asidetext .icontext{
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    margin-left: 20px;
+}
+.fas{
+    font-size: 20px;
+    
+}
+
+.iconDes{
+    padding-top: 20px;
+}
+
+.iconBotton{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.lowerleft{
+    /* border: 5px solid red; */
+    display: inline-block;
+    width: calc(100% - 570px - 10px);
+    vertical-align: top;
+}
+
+.lowerleft .icon2{
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 50px;
+    width: 170px;
+
+}
+.lowerleft .icontext2{
+    display: inline-block;
+    width:300px;
+    padding-left: 20px;
+}
+.lowerleft ul{
+    padding-bottom: 20px;
+}
+
+.lowerleft .icontext2 p{
+    padding-top: 20px;
+}
+
+.lowerleft .icon2 .fas{
+    font-size: 80px;
+    padding-left: 40px;
+}
+
+.thirdButton{
+    text-align: center;
+}
+
+
+.loweright{
+    /* border: 1px solid yellow; */
+    display: inline-block;
+    width: 520px;
+    margin-left: 10px;
+   
+}
+
+
+table{
+    /* border:5px solid white; */
+    text-align: center;
+}
+
+.loweright table .firstC{
+    border-left: black;
+}
+
+th{
+    border: 1px solid white;
+    border-top: 5px solid white;
+}
+
+td{
+    border: 1px solid white;
+}
+
+.loweright table .space{
+    border: 0px;
+}
+
+.fa-check-square{
+    font-size: 80px;
+    color: orange;
+}
+.loweright th{
+    font-weight: bold;
+    font-size:14px;
+    line-height: 1.6;
+}
+.loweright p{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size:12px;
+}
+.loweright .tableb{
+    text-align: center;
+    padding-top: 50px;
+
+}
+
+
+
+.footer{
+    background-color: #121212;
+    height: 333px;
+    padding-top: 25px;
+    margin-top: 50px;
+    border-top:1px solid lightgray;
+    text-align: center;
+    
+   }
+   
+  
+   
+   .rightpart{
+    font-size: 14px;
+    display:inline-block;
+    vertical-align: top;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+   }
+   .leftpart img{
+    display: inline-block;
+    padding-left: 200px;
+    margin-top: 80px;
+   }
+   .leftpart ul{
+    padding-left: 200px;
+   
+   }
+   
+   .leftpart li{
+    color: white;
+    display: inline-block;
+    vertical-align: top;
+   }
+   
+   .list{
+    display: inline-block;
+    vertical-align: top;
+    width: 220px;
+   
+   }
+   
+   .list1{
+    display: inline-block;
+    vertical-align: top;
+    width: 220px;
+   }
+   
+   .list2{
+    display: inline-block;
+    vertical-align: top;
+    width: 220px;
+   }
+   
+   .ull{
+    padding-right: 30px;
+    line-height: 20px;
+    text-align: left;
+   }
+
+   .footer .rightpart .ull .firstli{
+       font-weight: bold;
+       padding-bottom: 10px;
+   }
+   .copyright{
+       color:white;
+       margin: 0 auto;
+       text-align: center;
+   }
+
+
