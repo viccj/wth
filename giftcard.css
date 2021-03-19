@@ -356,7 +356,7 @@ h3{
     width: 500px;
     padding-top: 30px;
     line-height: 60px;
-    font:"jaf-bernino-sans-comp", sans-serif;
+    /* font:"jaf-bernino-sans-comp", sans-serif; */
 }
 
 .bannertext p{
@@ -402,14 +402,16 @@ h3{
         display: block;
         padding: 20px;
     }
-    .phoneBannerText h1{
+    .phoneBannerText h2{
+        font-weight: bold;
         font-size: 40px;
 
-        font:"jaf-bernino-sans-comp", sans-serif;
+        /* font:"jaf-bernino-sans-comp", sans-serif; */
     }
 
     .phoneBannerText p{
         padding-top: 20px;
+        line-height: 1.2;
 
     }
     .bannerButton{
@@ -474,7 +476,7 @@ button {
     font-size: 30px;
     line-height: 36px;
     font-weight: bold;
-    font-family: jaf-bernino-sans-comp, sans-serif;
+    /* font-family: jaf-bernino-sans-comp, sans-serif; */
     margin-bottom: 8px;
 }
 
@@ -482,7 +484,7 @@ button {
     font-size: 22px;
     line-height: 30px;
     font-weight: bold;
-    font-family: jaf-bernino-sans-comp, sans-serif;
+    /* font-family: jaf-bernino-sans-comp, sans-serif; */
     text-align: center;
     margin-bottom: 8px;
 }
@@ -557,7 +559,7 @@ button {
     font-size: 22px;
     line-height: 30px;
     font-weight: bold;
-    font-family: jaf-bernino-sans-comp, sans-serif;
+    /* font-family: jaf-bernino-sans-comp, sans-serif; */
     margin-bottom: 8px;
    
 }

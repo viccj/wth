@@ -3,7 +3,9 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
 	<title>What The Hours</title>
+	>
 
 	<link href="indexStyle.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -64,8 +66,11 @@
 
 
 		<div class="img_block">
+			<div>
+				<img src="bannercopy1.png" alt="">
+			</div>
 			<!-- <img src="https://picsum.photos/id/866/800/400"> -->
-			<img src="bannercopy1.png" alt="">
+			
 		</div>
 
 
@@ -279,19 +284,19 @@
 
 
 		// =============== change the hambuger button ===============
-		// var hamburgerBtn = document.getElementsByClassName('btn_switch')[0];
-		// var hamburgerCls = document.getElementsByClassName('phoneVersion')[2];
-		// console.log(hamburgerCls.style);
-		// hamburgerBtn.addEventListener('click', function () {
-		// 	if (hamburgerBtn.innerHTML == '<i class="fas fa-bars"></i>' || hamburgerCls.style.display == '') {
-		// 		hamburgerBtn.innerHTML = '<i class="far fa-times-circle"></i>';
-		// 		hamburgerCls.style.display = 'inline';
-		// 		console.log(hamburgerBtn.innerHTML);
-		// 	} else if (hamburgerBtn.innerHTML == '<i class="far fa-times-circle"></i>') {
-		// 		hamburgerBtn.innerHTML = '<i class="fas fa-bars"></i>';
-		// 	}
+		var hamburgerBtn = document.getElementsByClassName('btn_switch')[0];
+		var hamburgerCls = document.getElementsByClassName('phoneVersion')[2];
+		console.log(hamburgerCls.style);
+		hamburgerBtn.addEventListener('click', function () {
+			if (hamburgerBtn.innerHTML == '<i class="fas fa-bars"></i>' || hamburgerCls.style.display == '') {
+				hamburgerBtn.innerHTML = '<i class="far fa-times-circle"></i>';
+				hamburgerCls.style.display = 'inline';
+				console.log(hamburgerBtn.innerHTML);
+			} else if (hamburgerBtn.innerHTML == '<i class="far fa-times-circle"></i>') {
+				hamburgerBtn.innerHTML = '<i class="fas fa-bars"></i>';
+			}
 
-		// });
+		});
 
 
 

@@ -120,10 +120,6 @@ h3{
         z-index: 1;
     }
     
-    .nav{
-        position: relative;
-        z-index: 1;
-    }
 
     .logoBarRight{
         position: absolute;
@@ -282,12 +278,11 @@ h3{
         width: 100%;
         display: block !important;
     }
-}
-
-@media screen and (min-width: 576px) and (max-width: 767px){
-    .navbar{
+    /* .navbar{
         width: 100%;
+        height: auto;
         display: none;
+        
     }
     .navbar ul{
         width: 100%;
@@ -295,6 +290,37 @@ h3{
 
     .navbar li{
         display: block;
+        
+        padding-right: 0;
+        line-height:2;
+    } */
+    
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+    .nav{
+        position: relative;
+        /* border: 5px solid green; */
+        z-index: 1;
+    }
+    .img_block{
+        position: relative;
+        /* border: 1px solid red; */
+        z-index: 0;
+    }
+    .navbar{
+        width: 100%;
+        height: auto;
+        display: none;
+        
+    }
+    .navbar ul{
+        width: 100%;
+    }
+
+    .navbar li{
+        display: block;
+        
         padding-right: 0;
         line-height:2;
     }
@@ -304,6 +330,8 @@ h3{
 @media screen and (max-width: 576px){
     .navbar{
         width: 100%;
+        height: auto;
+        
         display: none;
     }
 
