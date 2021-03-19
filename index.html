@@ -4,118 +4,98 @@
 <head>
 	<meta charset="UTF-8">
 	<title>What The Hours</title>
+
 	<link href="indexStyle.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
 </head>
 
 <body>
 
 	<div class="wrapper">
+
+		
 		<div class='logoBar'>
 			<div class="logo">
 				<a href="index.html">
-                    <img src="WTHLogo.png" alt="jjj">
-                </a>
+					<img src="WTHLogo.png" alt="jjj">
+				</a>
 			</div>
 			<div class="logoBarRight">
 				<ul>
-					<li><a href="#">Login</a></li>
-					<li><a href="#">Join Us</a></li>
-					<botton class='search'>Booking Now</botton>
+					<li class='nVersion'><a href="#">Login</a></li>
+					<li class='nVersion'><a href="#">Join Us</a></li>
+					<li class='nVersion'><button class='search'>Booking Now</button></li>
+
+					<li class='phoneVersion'>
+						<a href="#">
+							<i class="fas fa-user-alt"></i>
+						</a>
+					</li>
+					
+					<li class='phoneVersion'>
+						<a href='#'>
+							<i class="fas fa-store"></i>
+						</a>
+					</li>
+					<li class='phoneVersion'>
+						<button class='btn_switch'>
+							<i class="fas fa-bars"></i>
+						</button>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+		<div class='nav'>
+			<div class='navbar'>
+				<ul>
+					<li><a href="#">THEATRE</a></li>
+					<li><a href="moviePage.html">MOVIES</a></li>
+					<li><a href="unlimited.html">UNLIMITED</a></li>
+					<li><a href="giftcard.html">GIFT CARDS</a></li>
+					<li><a href="blog.html">WTH BLOG</a></li>
+					<li><a href="#">4DX</a></li>
 				</ul>
 			</div>
 		</div>
-		<div class='navbar'>
-			<ul>
-				<li><a href="#">THEATRE</a></li>
-				<li><a href="moviePage.html">MOVIES</a></li>
-				<li><a href="unlimited.html">UNLIMITED</a></li>
-				<li><a href="giftcard.html">GIFT CARDS</a></li>
-				<li><a href="blog.html">WTH BLOG</a></li>
-				<li><a href="#">4DX</a></li>
-			</ul>
+
+
+
+		<div class="img_block">
+			<!-- <img src="https://picsum.photos/id/866/800/400"> -->
+			<img src="bannercopy1.png" alt="">
 		</div>
-		<div class='banner'>
 
-			<ul class="slides">
-				<input type="radio" id="control-1" name="control" checked>
-				<input type="radio" id="control-2" name="control">
-				<input type="radio" id="control-3" name="control">
 
-				<!--  Left/Right Button  -->
-				<div class="navigator slide-1">
-					<label for="control-3">
-						<i class="fas fa-chevron-left"></i>
-					</label>
-					<label for="control-2">
-						<i class="fas fa-chevron-right"></i>
-					</label>
-				</div>
-
-				<div class="navigator slide-2">
-					<label for="control-1">
-						<i class="fas fa-chevron-left"></i>
-					</label>
-					<label for="control-3">
-						<i class="fas fa-chevron-right"></i>
-					</label>
-				</div>
-
-				<div class="navigator slide-3">
-					<label for="control-2">
-						<i class="fas fa-chevron-left"></i>
-					</label>
-					<label for="control-1">
-						<i class="fas fa-chevron-right"></i>
-					</label>
-				</div>
-				<!--  /Left/Right Button  -->
-
-				<li class="slide"></li>
-				<li class="slide"></li>
-				<li class="slide"></li>
-
-				<div class="controls-visible">
-					<label for="control-1"></label>
-					<label for="control-2"></label>
-					<label for="control-3"></label>
-				</div>
-			</ul>
-		</div>
 		<div class='hotMovie'>
 
 			<h1>Hot Movie</h1>
 
+			<div class='triangle'>
+				<button>></button>
 
+			</div>
 			<ul>
-				<div class='triangle'>
-					<button>></button>
-				
-					
-				</div>
-
 				<li>
 					<a href="singleMovie.html">
 						<img src="moviePoster/1.jpg" alt="">
+						<h3>Hugo Silva</h3>
 					</a>
-					
-					
-
-					<h3>Hugo Silva</h3>
-
 				</li>
-
 				<li>
-					<img src="moviePoster/2.jpg" alt="">
-					<h3>Imanol Arias</h3>
-
+					<a>
+						<img src="moviePoster/2.jpg" alt="">
+						<h3>Imanol Arias</h3>
+					</a>
 				</li>
-
 				<li>
-					<img src="moviePoster/3.jpg" alt="">
-					<h3>Javier Bardem</h3>
-
+					<a>
+						<img src="moviePoster/3.jpg" alt="">
+						<h3>Javier Bardem</h3>
+					</a>
 				</li>
-
 				<li>
 					<img src="moviePoster/4.jpg" alt="">
 					<h3>Javier Bardem</h3>
@@ -148,58 +128,8 @@
 			</div>
 		</div>
 
-
-
-		<!-- <div class='hotMovie'>
-
-			<h1>Coming Soon</h1>
-
-
-			<ul>
-
-				<li>
-					<div class='imgdiv'>
-						<img src="moviePoster/1.jpg" alt="">
-					</div>
-
-					<h3>Hugo Silva</h3>
-
-				</li>
-
-				<li>
-					<img src="moviePoster/2.jpg" alt="">
-					<h3>Imanol Arias</h3>
-
-				</li>
-
-				<li>
-					<img src="moviePoster/3.jpg" alt="">
-					<h3>Javier Bardem</h3>
-
-				</li>
-
-				<li>
-					<img src="moviePoster/4.jpg" alt="">
-					<h3>Javier Bardem</h3>
-
-				</li>
-				<li>
-					<img src="moviePoster/4.jpg" alt="">
-					<h3>Javier Bardem</h3>
-
-				</li>
-				<li>
-					<img src="moviePoster/4.jpg" alt="">
-					<h3>Javier Bardem</h3>
-
-				</li>
-			</ul>
-			<hr size=1 style="border:1 dashed lightgrey">
-
-		</div> -->
-		<!-- <div class='comingSoon'> 
 		
-		<h1>Coming Soon</h1>
+		<!-- <h1>Coming Soon</h1>
 
 		
 		<ul>
@@ -272,7 +202,7 @@
 		</div>
 
 		<div class="footer">
-			
+
 			<div class="rightpart">
 				<div class="list">
 					<ul class='ull'>
@@ -331,6 +261,42 @@
 		</div>
 	</div>
 
+
+
+
+
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(function () {
+			// 點擊按鈕，選單縮放
+			$("button.btn_switch").on("click", function () {
+				$("div.navbar").slideToggle();
+			});
+		});
+
+
+		// =============== change the hambuger button ===============
+		// var hamburgerBtn = document.getElementsByClassName('btn_switch')[0];
+		// var hamburgerCls = document.getElementsByClassName('phoneVersion')[2];
+		// console.log(hamburgerCls.style);
+		// hamburgerBtn.addEventListener('click', function () {
+		// 	if (hamburgerBtn.innerHTML == '<i class="fas fa-bars"></i>' || hamburgerCls.style.display == '') {
+		// 		hamburgerBtn.innerHTML = '<i class="far fa-times-circle"></i>';
+		// 		hamburgerCls.style.display = 'inline';
+		// 		console.log(hamburgerBtn.innerHTML);
+		// 	} else if (hamburgerBtn.innerHTML == '<i class="far fa-times-circle"></i>') {
+		// 		hamburgerBtn.innerHTML = '<i class="fas fa-bars"></i>';
+		// 	}
+
+		// });
+
+
+
+
+	</script>
 </body>
 
 </html>

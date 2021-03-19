@@ -6,19 +6,53 @@ body{
     
     background-color: #121212;
     font-family: exo,helvetica neue,helvetica,arial,serif!important;
-    
+    font-size: 0;
 }
 a{
     text-decoration:none;
 }
+
+li{
+    font-size: 16px;
+}
+
+h3{
+    font-size: 16px;
+}
+
 .wrapper {
 	width: 1200px;
     margin: 0 auto;
     background-color: #121212;
     font-family: exo,helvetica neue,helvetica,arial,serif!important;
-    
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    .wrapper{
+        width: 960px;
+    }
     
 }
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .wrapper{
+        width: 720px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+    .wrapper{
+        width: 540px;
+    }
+}   
+
+@media screen and (max-width: 576px){
+    .wrapper{
+        width: 100%;
+    }
+}
+
+/* ===============LOGO BAR SECTION=============== */
+
 .logoBar{
     overflow: hidden;
     height: 87px;
@@ -27,8 +61,7 @@ a{
 .logo {
     float: left;
     padding-top: 10px;
-    padding-left: 150px;
-    
+    padding-left: 50px;
 }
 
 
@@ -38,18 +71,14 @@ a{
 }
 .logoBarRight {
     float: right;
-    /* display: inline; */
     overflow: hidden;
-}
-.logoBarRight{
-    padding-right: 150px;
     padding-top: 30px;
-
 }
+
 
 .logoBarRight li{
     padding-right: 20px;
-    display: inline;
+    display: inline-block;
     text-decoration:none;
     
 }
@@ -57,7 +86,7 @@ a{
     color:white;
 }
 
-.logoBarRight botton{
+.logoBarRight button{
     background-color: #f56600; /* Green */
     border: none;
     color: white;
@@ -68,7 +97,148 @@ a{
     display: inline-block;
     font-size: 16px;
     border-radius: 5px;
+    outline: none;
 }
+
+.logoBarRight .phoneVersion{
+    display: none;
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+    .logoBar{
+        width: 520px;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .nav{
+        position: relative;
+        z-index: 1;
+    }
+
+    .logoBarRight{
+        position: absolute;
+        width: 180px;
+        padding-right: 0;
+        left: 75%;
+    }
+    .logoBarRight ul{
+        width:180px;
+    }
+
+    .logoBarRight li{
+        padding-right: 20px;
+        display: inline-block;
+        text-decoration:none;
+    }
+    .logoBarRight .nVersion{
+        display: none;
+    }
+
+    .logoBarRight .phoneVersion{
+        display: inline-block;
+    }
+
+    .logo {
+        padding-top: 10px;
+        padding-left: 30px;
+    }
+
+    .fas, .far{
+        color: white;
+        font-size: 25px;
+    }
+
+    .far{
+        
+        
+    }
+
+    .logoBarRight button{
+        background-color: #121212;
+        border: none;
+        color: #121212;
+        font-weight: bold;
+        padding: 0 ;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+        
+    }
+}  
+
+
+/* 行動版時，調整列表樣式 */
+@media screen and (max-width: 576px){
+
+    .logoBar{
+        width: 520px;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .nav{
+        position: relative;
+        z-index: 1;
+    }
+
+    
+    .logoBarRight{
+        position: absolute;
+        width: 180px;
+        padding-right: 0;
+        left: 67%;
+        /* float: right; */
+    }
+    .logoBarRight ul{
+        width:180px;
+    }
+
+    .logoBarRight li{
+        padding-right: 20px;
+        display: inline-block;
+        text-decoration:none;
+    }
+    .logoBarRight .nVersion{
+        display: none;
+    }
+
+    .logoBarRight .phoneVersion{
+        display: inline-block;
+    }
+
+    .logo {
+        padding-top: 10px;
+        padding-left: 50px;
+    }
+
+    .fas, .far{
+        color: white;
+        font-size: 25px;
+    }
+    .far{
+        background-color: #f56600 ;
+    }
+
+    .logoBarRight button{
+        background-color: #121212;
+        border: none;
+        color: #121212;
+        font-weight: bold;
+        padding: 0 ;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+}
+
+
+/* ===============NAV BAR SECTION=============== */
 
 
 .navbar{
@@ -80,6 +250,7 @@ a{
 .navbar ul{
     padding-top: 15px;
     display: inline-block;
+    background-color: #f56600;
 }
 
 .navbar li{ 
@@ -93,9 +264,56 @@ a{
     font-size: 15px;
 }
 
-.banner img{
-    max-width: 100%;
+
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    .navbar{
+        display: block !important;
+    }
 }
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .navbar{
+        width: 100%;
+        display: block !important;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+    .navbar{
+        width: 100%;
+        display: none;
+    }
+    .navbar ul{
+        width: 100%;
+    }
+
+    .navbar li{
+        display: block;
+        padding-right: 0;
+        line-height:2;
+    }
+}   
+
+/* 行動版時，調整列表樣式 */
+@media screen and (max-width: 576px){
+    .navbar{
+        width: 100%;
+        display: none;
+    }
+
+    .navbar ul{
+        width: 100%;
+    }
+
+    .navbar li{
+        display: block;
+        padding-right: 0;
+        line-height:2;
+    }    
+}
+
+
 
 .trail h1{
     background-color: #121212;
@@ -104,12 +322,32 @@ a{
     font-size: 42px;
     font-family: exo,helvetica neue,helvetica,arial,serif!important;
     line-height: 36px;
-    /* margin-bottom: 16px; */
     padding-top: 16px;
+    padding-left: 10px;
+    padding-bottom: 10px;
 }
 
-iframe{
+@media screen and (max-width:767px){
+    .trail h1{
+        text-align: center;
+        font-size: 38px;
+    }
+}
+
+div.view{
+    /* border: 1px solid red; */
+    width: 100%;
+    position: relative;
+    padding-top: calc(100% * 9 /16);
+}
+
+div.view iframe{
     display:block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -118,45 +356,132 @@ iframe{
     width:600px;
 } */
 
-.more .moreh1{
+.more h1{
     color: white;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 42px;
     padding-bottom: 50px;
     padding-top: 20px;
 }
 
+@media screen and (max-width:767px){
+    .more h1{
+        padding-top: 50px;
+        text-align: center;
+        font-size: 38px;
+    }
+}
+
+
 .info{
     
+    width: 600px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    color: white;
+}
+
+@media screen and (max-width:767px){
+    .info{
+        width: 100%;
+    }
+}
+
+
+
+.info h4{
+    font-size: 30px;
+    
+}
+
+div.info div.text p.twenty{
+    /* border: 1px solid yellow; */
+    padding-top: 10px;
+}
+
+.moviePic{
+    width: 250px;
+    
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 300px;
+    /* border: 1px solid red ; */
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    .moviePic{
+        width: 250px;
+        padding-left: 30px;
+        display: inline-block;
+        vertical-align: top;
+       
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .info{
+        width: 400px;
+    }
+    .moviePic{
+        width: 250px;
+        padding-left: 0;
+        display: inline-block;
+        vertical-align: top;
+        
+    }
+}
+
+@media screen and (max-width:767px){
+    .moviePic{
+        width: 250px;
+        padding-left: 100px;
+        display: inline-block;
+        vertical-align: top;
+        
+    }
+    .info{
+        padding: 20px;
+        width: 500px;
+        
+        
+    }
 }
 
 .info h1{
     font-size:42px;
     padding-bottom: 15px;
     width: 500px;
-}
-
-
-.date{
-    display:inline-block;
-    /* width: 300px; */
     
 }
+
+.date{
+    display: inline-block;
+    padding-right: 100px;
+}
+
+@media screen and (max-width:767px){
+    .date{
+        padding-bottom: 15px;
+    }
+}
+
+
 
 
 .time{
     
     display: inline-block;
-    padding-left: 50px;
-    
     
 }
 
-.info{
-    background-color: #121212;
-    color:white;
-    width:600px;
+
+img{
+    width: 300px;
+    height: 451px;
 }
+
+
 
 .twenty{
     font-size:20px;
@@ -173,54 +498,26 @@ dt{
 }
 dd{
     height: 40px;
-    /* float: right;
-    overflow: hidden;
-    display: block; */
+
 }
 
 .description{
-    width: 600px;
+    position: absolute;
+    width: 100%;
     padding-top: 50px;
     margin-bottom: 25px;
+    /* border: 1px solid green; */
     
     
 }
 
 .description p{
+    position: absolute;
     font-size: 18px;
     line-height: 1.2;
-}
-.text{
-    
-    width: 300px;
-    height: 450px;
-    
-    
-    /* padding-right: 500px; */
+    max-width: 100%;
 }
 
-img{
-    width: 300px;
-    height: 451px;
-}
-.info{
-    /* border: 1px solid green; */
-    width: 600px;
-    display: inline-block;
-    vertical-align: top;
-}
-
-.moviePic{
-    /* border: 1px solid red; */
-    /* background-color: #121212; */
-    width: 450px;
-    height: 500px;
-    /* width: 69px; */
-    display: inline-block;
-    vertical-align: top;
-  
-    padding-left: 200px;
-}
 
 
 
@@ -287,6 +584,7 @@ img{
    
    .ull{
     padding-right: 30px;
+    padding-bottom: 40px;
     line-height: 20px;
     text-align: left;
    }
@@ -299,6 +597,7 @@ img{
        color:white;
        margin: 0 auto;
        text-align: center;
+       padding-top: 10px;
    }
 
 

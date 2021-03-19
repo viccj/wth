@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <title>Blogs</title>
     <link href="singleBlog.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 <body>
 
 <div class="wrapper">
-    <div class='logoBar'>
+    <!-- <div class='logoBar'>
         <div class="logo">
             <a href="index.html">
                 <img src="WTHLogo.png" alt="jjj">
@@ -32,7 +34,51 @@
 				<li><a href="#">4DX</a></li>
         </ul>
 	</div>
-	
+	 -->
+     <div class='logoBar'>
+        <div class="logo">
+            <a href="index.html">
+                <img src="WTHLogo.png" alt="jjj">
+            </a>
+        </div>
+        <div class="logoBarRight">
+            <ul>
+                <li class='nVersion'><a href="#">Login</a></li>
+                <li class='nVersion'><a href="#">Join Us</a></li>
+                <li class='nVersion'><button class='search'>Booking Now</button></li>
+
+                <li class='phoneVersion'>
+                    <a href="#">
+                        <i class="fas fa-user-alt"></i>
+                    </a>
+                </li>
+                
+                <li class='phoneVersion'>
+                    <a href='#'>
+                        <i class="fas fa-store"></i>
+                    </a>
+                </li>
+                <li class='phoneVersion'>
+                    <button class='btn_switch'>
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </li>
+            </ul>
+            
+        </div>
+    </div>
+    <div class='nav'>
+        <div class='navbar'>
+            <ul>
+                <li><a href="#">THEATRE</a></li>
+                <li><a href="moviePage.html">MOVIES</a></li>
+                <li><a href="unlimited.html">UNLIMITED</a></li>
+                <li><a href="giftcard.html">GIFT CARDS</a></li>
+                <li><a href="blog.html">WTH BLOG</a></li>
+                <li><a href="#">4DX</a></li>
+            </ul>
+        </div>
+    </div>
     <div class='blog'>
         <div class='breadcrumb'>
             <p>Home > WTH Blog > blogName</p>
@@ -40,10 +86,6 @@
 
 		<div class='title'>
 			<h1>Blade: everything we know about Mahershala Ali's MCU debut</h1>
-            
-           
-			
-
         </div>
         <div class='main'>
             
@@ -173,12 +215,38 @@
         
 
 	</div>
-    
-  
-    
-    
+     
     
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(function () {
+        // 點擊按鈕，選單縮放
+        $("button.btn_switch").on("click", function () {
+            $("div.navbar").slideToggle();
+        });
+    });
+
+
+    // =============== change the hambuger button ===============
+    var hamburgerBtn = document.getElementsByClassName('btn_switch')[0];
+    var hamburgerCls = document.getElementsByClassName('phoneVersion')[2];
+    console.log(hamburgerCls.style);
+    hamburgerBtn.addEventListener('click', function () {
+        if (hamburgerBtn.innerHTML == '<i class="fas fa-bars"></i>' || hamburgerCls.style.display == '') {
+            hamburgerBtn.innerHTML = '<i class="far fa-times-circle"></i>';
+            hamburgerCls.style.display = 'inline';
+            console.log(hamburgerBtn.innerHTML);
+        } else if (hamburgerBtn.innerHTML == '<i class="far fa-times-circle"></i>') {
+            hamburgerBtn.innerHTML = '<i class="fas fa-bars"></i>';
+        }
+
+    });
+
+
+
+
+</script>
 
 </body>
 </html>

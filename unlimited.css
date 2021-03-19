@@ -1,5 +1,5 @@
 @import url("reset.css");
-*{
+/* *{
     box-sizing: border-box;
   }
 
@@ -40,7 +40,6 @@ a{
 }
 .logoBarRight {
     float: right;
-    /* display: inline; */
     overflow: hidden;
 }
 .logoBarRight{
@@ -63,7 +62,7 @@ a{
 }
 
 .logoBarRight botton{
-    background-color: #f56600; /* Green */
+    background-color: #f56600; 
     border: none;
     color: white;
     font-weight: bold;
@@ -96,27 +95,349 @@ a{
 .navbar li a{
     color:white;
     font-size: 15px;
+} */
+
+
+*{
+    box-sizing: border-box;
 }
 
+body{
+    
+    background-color: #121212;
+    text-decoration: none;
+    font-size: 0;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration:none;
+}
+
+li{
+    font-size: 16px;
+}
+
+h3{
+    font-size: 16px;
+}
+
+
+.wrapper {
+	width: 1200px;
+    margin: 0 auto;
+    background-color: #121212;
+    font-family: exo,helvetica neue,helvetica,arial,serif!important;
+    
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    .wrapper{
+        width: 960px;
+    }
+    
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .wrapper{
+        width: 720px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+    .wrapper{
+        width: 540px;
+    }
+}   
+
+@media screen and (max-width: 576px){
+    .wrapper{
+        width: 100%;
+    }
+}
+
+/* ===============LOGO BAR SECTION=============== */
+
+.logoBar{
+    overflow: hidden;
+    height: 87px;
+    background-color:#121212
+}
+.logo {
+    float: left;
+    padding-top: 10px;
+    padding-left: 50px;
+}
+
+.logo img{
+    width: 70px;
+    height: 70px;
+}
+
+.logoBarRight {
+    float: right;
+    
+    overflow: hidden;
+    /* padding-right: 150px; */
+    padding-top: 30px;
+}
+
+
+.logoBarRight li{
+    padding-right: 20px;
+    display: inline-block;
+    text-decoration:none;
+    
+}
+.logoBarRight li a {
+    color:white;
+    
+}
+
+.logoBarRight button{
+    background-color: #f56600; /* Green */
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.logoBarRight .phoneVersion{
+    display: none;
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+    .logoBar{
+        width: 520px;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .nav{
+        position: relative;
+        z-index: 1;
+    }
+
+    .logoBarRight{
+        position: absolute;
+        width: 180px;
+        padding-right: 0;
+        left: 75%;
+    }
+    .logoBarRight ul{
+        width:180px;
+    }
+
+    .logoBarRight li{
+        padding-right: 20px;
+        display: inline-block;
+        text-decoration:none;
+    }
+    .logoBarRight .nVersion{
+        display: none;
+    }
+
+    .logoBarRight .phoneVersion{
+        display: inline-block;
+    }
+
+    .logo {
+        padding-top: 10px;
+        padding-left: 30px;
+    }
+
+    .fas, .far{
+        color: white;
+        font-size: 25px;
+    }
+
+    .logoBarRight button{
+        background-color: #121212;
+        border: none;
+        color: #121212;
+        font-weight: bold;
+        padding: 0 ;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+}  
+
+
+/* 行動版時，調整列表樣式 */
+@media screen and (max-width: 576px){
+
+    .logoBar{
+        width: 520px;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .nav{
+        position: relative;
+        z-index: 1;
+    }
+
+    
+    .logoBarRight{
+        position: absolute;
+        width: 180px;
+        padding-right: 0;
+        left: 67%;
+        /* float: right; */
+    }
+    .logoBarRight ul{
+        width:180px;
+    }
+
+    .logoBarRight li{
+        padding-right: 20px;
+        display: inline-block;
+        text-decoration:none;
+    }
+    .logoBarRight .nVersion{
+        display: none;
+    }
+
+    .logoBarRight .phoneVersion{
+        display: inline-block;
+    }
+
+    .logo {
+        padding-top: 10px;
+        padding-left: 50px;
+    }
+
+    .fas, .far{
+        color: white;
+        font-size: 25px;
+    }
+
+    /* .far{
+        color: white;
+        font-size: 25px;
+    } */
+
+    .logoBarRight button{
+        background-color: #121212;
+        border: none;
+        color: #121212;
+        font-weight: bold;
+        padding: 0 ;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+}
+
+
+
+/* ===============NAV BAR SECTION=============== */
+
+
+.navbar{
+    background-color: #f56600;
+    text-align: center;
+    height: 45px;
+}
+
+.navbar ul{
+    padding-top: 15px;
+    display: inline-block;
+    background-color: #f56600;
+}
+
+.navbar li{ 
+    display: inline-block;
+    padding-right: 30px;
+    
+}
+
+.navbar li a{
+    color:white;
+    font-size: 15px;
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    .navbar{
+        display: block !important;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .navbar{
+        width: 100%;
+        display: block !important;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+    .navbar{
+        width: 100%;
+        display: none;
+    }
+    .navbar ul{
+        width: 100%;
+    }
+
+    .navbar li{
+        display: block;
+        padding-right: 0;
+        line-height:2;
+    }
+}   
+
+/* 行動版時，調整列表樣式 */
+@media screen and (max-width: 576px){
+    .navbar{
+        width: 100%;
+        display: none;
+    }
+
+    .navbar ul{
+        width: 100%;
+    }
+
+    .navbar li{
+        display: block;
+        padding-right: 0;
+        line-height:2;
+    }    
+}
+
+/* 
 .banner img{
     width:100%;
     height:390px;
     display:block;
-}
+} */
 /* breadcrumb */
 
 .breadcrumb{
-    background-color:#121212;
-    color:white;
+    
+    /* border: 1px solid white; */
     height: 50px;
     font-size:12px;
     font-weight: lighter;
     display: flex;
     align-items: center;
+    padding-left: 30px;
 }
 
 .blog{
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
     background-color: #121212;
     color:white;
@@ -124,18 +445,45 @@ a{
 
 }
 
-.unbanner{
-    margin: 0 auto;
-}
 
 .blog .title{
     /* border: 1px solid white; */
     margin-bottom: 50px;
 }
-.upper{
-    height: 700px;
+
+.blog .title h1{
+    font-size: 42px;
+    font-weight: bold;
+    padding-bottom: 20px;
 }
 
+/* img{
+    height: 235px;
+} */
+
+@media screen and (max-width: 991px){
+  .blog .title h1{
+      font-size: 24px;
+  } 
+  
+}
+
+.bannertext {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+.bannerButton{
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+.upper{
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
 .uppertitle{
     font-size:32px;
     font-weight: bold;
@@ -149,13 +497,34 @@ a{
     display: inline-block;
     width: calc(100% - 570px - 10px);
     vertical-align: top;
+    padding: 20px;
 }
+
 
 
 .upperleftP{
-    width: 450px;
+    max-width: 450px;
     padding-bottom: 100px;
+    font-size: 14px;
 }
+/* @media screen and (min-width: 768px) and (max-width: 991px){ */
+@media screen and (max-width: 991px){
+    .upperleft{
+        /* border: 1px solid red; */
+        display: block;
+        width: 100%;
+    }
+    .uppertitle{
+        padding:20px;
+    }
+    .upperleftP{
+        max-width: 100%;
+        padding-bottom: 100px;
+        font-size: 16px;
+    }
+}
+
+
 
 
 button {
@@ -166,25 +535,18 @@ button {
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    /* display: inline-block; */
     font-size: 16px;
     border-radius: 5px;
 }
-
-.blog .title h1{
-    font-size: 50px;
-    font-weight: bold;
+.twoButton{
+    display: inline-block;
+    padding-right: 10px;
     padding-bottom: 20px;
 }
 
-.bannertext {
-    padding-top: 30px;
-    text-align: center;
-}
-.bannerButton{
-    text-align: center;
-    padding-top: 50px;
-}
+
+
 .contentHeading{
     text-align: left;
     padding-bottom: 40px;
@@ -193,33 +555,63 @@ button {
 }
 
 
+
 .upperight{
-    /* border: 5px solid blue; */
     display: inline-block;
     width: 520px;
     margin-left: 10px;
-   
+    
 }
 
 
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .upperight{
+        /* border: 1px solid green; */
+        display: block;
+        width: 100%;
+        
+        /* height: 2000px; */
+        
+    }
+}
+
 
 .upperight .asidepic{
+    /* border: 1px solid yellow; */
     width: 205px;
+    /* padding-right: 40px; */
     height: 420px;
     display: inline-block;
     vertical-align: top;
 }
-
-.upperight .asidepic img{
-    max-width: 100%;
+@media screen and (min-width: 768px) and (max-width: 991px){
+    
 }
 
+
+
 .upperight .asidetext{
+    /* border: 1px solid red; */
     display: inline-block;
-    overflow: hidden; /* 超過範圍隱藏 */
+    /* overflow: hidden; 超過範圍隱藏 */
     width:300px;
     padding-left: 20px;
    
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .upperight .asidetext{
+        display: inline-block;
+        overflow: hidden; /* 超過範圍隱藏 */
+        width:500px;
+        padding-left: 20px;
+        
+       
+    }
+
+    .upperight .asidepic img{
+        
+        max-width: 100%;;
+    }
 }
 
 .upperight .asidetext ul li{
@@ -230,14 +622,24 @@ button {
 .upperight .asidetext .icon1{
     display: inline-block;
     vertical-align: top;
+    
 }
 
 .upperight .asidetext .icontext{
     display: inline-block;
     vertical-align: top;
+    /* max-width: 100%; */
     width: 200px;
     margin-left: 20px;
+    
 }
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .upperight .asidetext .icontext{
+        width: 300px;   
+    }
+}
+
 .fas{
     font-size: 20px;
     
@@ -245,12 +647,18 @@ button {
 
 .iconDes{
     padding-top: 20px;
+    font-size: 16px;
 }
 
 .iconBotton{
     text-align: center;
     padding-top: 50px;
 }
+
+
+
+
+/* ====================== lower  ===================== */
 
 .lowerleft{
     /* border: 5px solid red; */
@@ -270,6 +678,7 @@ button {
     display: inline-block;
     width:300px;
     padding-left: 20px;
+    /* border: 1px solid red; */
 }
 .lowerleft ul{
     padding-bottom: 20px;
@@ -282,6 +691,15 @@ button {
 .lowerleft .icon2 .fas{
     font-size: 80px;
     padding-left: 40px;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    .lowerleft .icontext2{
+        display: inline-block;
+        width:200px;
+        padding-left: 0;
+        /* border: 1px solid red; */
+    }
 }
 
 .thirdButton{
@@ -297,6 +715,25 @@ button {
    
 }
 
+@media screen and (max-width: 991px){
+   .loweright{
+       display: block;
+       width: 100%;
+       padding: 20px;
+       /* border: 1px solid red; */
+       
+   }
+   .lowerleft{
+       display: block;
+       width: 100%;
+       padding-bottom: 20px;
+       /* padding: 20px; */
+   }
+   .lowerleft .contentHeading{
+       padding-left: 30px;
+   }
+}
+
 
 table{
     /* border:5px solid white; */
@@ -305,6 +742,8 @@ table{
 
 .loweright table .firstC{
     border-left: black;
+    font-size: 16px;
+    color: white;
 }
 
 th{
@@ -318,6 +757,7 @@ td{
 
 .loweright table .space{
     border: 0px;
+    
 }
 
 .fa-check-square{
@@ -334,11 +774,20 @@ td{
     padding-bottom: 5px;
     font-size:12px;
 }
+
+@media screen and (max-width: 991px){
+    .loweright p{
+        padding:20px;
+    }
+ }
+ 
 .loweright .tableb{
     text-align: center;
     padding-top: 50px;
 
 }
+
+
 
 
 
@@ -402,6 +851,7 @@ td{
    
    .ull{
     padding-right: 30px;
+    padding-bottom: 40px;
     line-height: 20px;
     text-align: left;
    }
@@ -413,6 +863,7 @@ td{
    .copyright{
        color:white;
        margin: 0 auto;
+        padding-top: 10px;
        text-align: center;
    }
 

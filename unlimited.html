@@ -12,7 +12,7 @@
 <body>
 
     <div class="wrapper">
-        <div class='logoBar'>
+        <!-- <div class='logoBar'>
             <div class="logo">
                 <a href="index.html">
                     <img src="WTHLogo.png" alt="jjj">
@@ -35,8 +35,51 @@
 				<li><a href="blog.html">WTH BLOG</a></li>
 				<li><a href="#">4DX</a></li>
             </ul>
-        </div>
+        </div> -->
+        <div class='logoBar'>
+			<div class="logo">
+				<a href="index.html">
+					<img src="WTHLogo.png" alt="jjj">
+				</a>
+			</div>
+			<div class="logoBarRight">
+				<ul>
+					<li class='nVersion'><a href="#">Login</a></li>
+					<li class='nVersion'><a href="#">Join Us</a></li>
+					<li class='nVersion'><button class='search'>Booking Now</button></li>
 
+					<li class='phoneVersion'>
+						<a href="#">
+							<i class="fas fa-user-alt"></i>
+						</a>
+					</li>
+					
+					<li class='phoneVersion'>
+						<a href='#'>
+							<i class="fas fa-store"></i>
+						</a>
+					</li>
+					<li class='phoneVersion'>
+						<button class='btn_switch'>
+							<i class="fas fa-bars"></i>
+						</button>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+		<div class='nav'>
+			<div class='navbar'>
+				<ul>
+					<li><a href="#">THEATRE</a></li>
+					<li><a href="moviePage.html">MOVIES</a></li>
+					<li><a href="unlimited.html">UNLIMITED</a></li>
+					<li><a href="giftcard.html">GIFT CARDS</a></li>
+					<li><a href="blog.html">WTH BLOG</a></li>
+					<li><a href="#">4DX</a></li>
+				</ul>
+			</div>
+		</div>
         <div class='blog'>
             <div class='breadcrumb'>
                 <p>Home > WTH Blog > blogName</p>
@@ -45,7 +88,10 @@
             <div class='title'>
                 
                 <h1>Regal Unlimited™ Movie Subscription Pass</h1>
-                <img src="unlimited/unlimitedbanner.jpg"  class='unbanner' width="1200px">
+                <div class='img-block'>
+                    <img src="unlimited/unlimitedbanner.jpg">
+                </div>
+                
                 <div class='bannertext'>
                     <p>Click below for an important message about Unlimited Subscriptions</p>
                 </div>
@@ -64,10 +110,14 @@
                         <p class='upperleftP'>With an annual Regal Unlimited™ movie subscription pass, you can watch as many movies as you want, as many times as you want, whenever you want, wherever you want. Plus, get advance tickets as soon as they go on sale, enjoy 10% off all food and non-alcoholic beverages in theatre. Plus, enjoy many Regal Crown Club benefits.</p>
                     </div>
 
-                    <div>
-                        <button>FREQUENT QUESTION</button>
+                    <div class='twoButton'>
+                        <button >FREQUENT QUESTION</button>
+                    </div>
+                    <div class="twoButton">
                         <button>PROGRAM RULES</button>
                     </div>
+                     
+                    
                 </div>
 
                 <div class='upperight'>
@@ -300,6 +350,31 @@
 
 
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(function () {
+			// 點擊按鈕，選單縮放
+			$("button.btn_switch").on("click", function () {
+				$("div.navbar").slideToggle();
+			});
+		});
+
+
+		// =============== change the hambuger button ===============
+		var hamburgerBtn = document.getElementsByClassName('btn_switch')[0];
+		var hamburgerCls = document.getElementsByClassName('phoneVersion')[2];
+		console.log(hamburgerCls.style);
+		hamburgerBtn.addEventListener('click', function () {
+			if (hamburgerBtn.innerHTML == '<i class="fas fa-bars"></i>' || hamburgerCls.style.display == '') {
+				hamburgerBtn.innerHTML = '<i class="far fa-times-circle"></i>';
+				hamburgerCls.style.display = 'inline';
+				console.log(hamburgerBtn.innerHTML);
+			} else if (hamburgerBtn.innerHTML == '<i class="far fa-times-circle"></i>') {
+				hamburgerBtn.innerHTML = '<i class="fas fa-bars"></i>';
+			}
+
+        });
+    </script>
 
 </body>
 

@@ -1,5 +1,5 @@
 @import url("reset.css");
-@import url('rollmovie.css');
+
 
 *{
     box-sizing: border-box;
@@ -21,6 +21,7 @@ a{
 	width: 1200px;
     margin: 0 auto;
     background-color: #121212;
+    
     
     
 }

@@ -1,4 +1,4 @@
-@import url("reset.css");
+/* @import url("reset.css");
 
 
 *{
@@ -42,7 +42,6 @@ a{
 }
 .logoBarRight {
     float: right;
-    /* display: inline; */
     overflow: hidden;
 }
 .logoBarRight{
@@ -65,7 +64,7 @@ a{
 }
 
 .logoBarRight botton{
-    background-color: #f56600; /* Green */
+    background-color: #f56600; 
     border: none;
     color: white;
     font-weight: bold;
@@ -98,13 +97,330 @@ a{
 .navbar li a{
     color:white;
     font-size: 15px;
+} */
+
+@import url("reset.css");
+*{
+    box-sizing: border-box;
 }
 
-.banner img{
-    width:100%;
-    height:390px;
-    display:block;
+body{
+    
+    background-color: #121212;
+    text-decoration: none;
+    /* font-size: 0; */
 }
+img{
+    max-width: 100%;
+    
+}
+a{
+    text-decoration:none;
+}
+
+li{
+    font-size: 16px;
+}
+
+h3{
+    font-size: 16px;
+}
+
+
+.wrapper {
+	width: 1200px;
+    margin: 0 auto;
+    background-color: #121212;
+    font-family: exo,helvetica neue,helvetica,arial,serif!important;
+    
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    .wrapper{
+        width: 960px;
+    }
+    
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .wrapper{
+        width: 720px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+    .wrapper{
+        width: 540px;
+    }
+}   
+
+@media screen and (max-width: 576px){
+    .wrapper{
+        width: 100%;
+    }
+}
+
+/* ===============LOGO BAR SECTION=============== */
+
+.logoBar{
+    overflow: hidden;
+    height: 87px;
+    background-color:#121212
+}
+.logo {
+    float: left;
+    padding-top: 10px;
+    padding-left: 50px;
+}
+
+.logo img{
+    width: 70px;
+    height: 70px;
+}
+
+.logoBarRight {
+    float: right;
+    
+    overflow: hidden;
+    /* padding-right: 150px; */
+    padding-top: 30px;
+}
+
+
+.logoBarRight li{
+    padding-right: 20px;
+    display: inline-block;
+    text-decoration:none;
+    
+}
+.logoBarRight li a {
+    color:white;
+    
+}
+
+.logoBarRight button{
+    background-color: #f56600; /* Green */
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.logoBarRight .phoneVersion{
+    display: none;
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+    .logoBar{
+        width: 520px;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .nav{
+        position: relative;
+        z-index: 1;
+    }
+
+    .logoBarRight{
+        position: absolute;
+        width: 180px;
+        padding-right: 0;
+        left: 75%;
+    }
+    .logoBarRight ul{
+        width:180px;
+    }
+
+    .logoBarRight li{
+        padding-right: 20px;
+        display: inline-block;
+        text-decoration:none;
+    }
+    .logoBarRight .nVersion{
+        display: none;
+    }
+
+    .logoBarRight .phoneVersion{
+        display: inline-block;
+    }
+
+    .logo {
+        padding-top: 10px;
+        padding-left: 30px;
+    }
+
+    .fas, .far{
+        color: white;
+        font-size: 25px;
+    }
+
+    .logoBarRight button{
+        background-color: #121212;
+        border: none;
+        color: #121212;
+        font-weight: bold;
+        padding: 0 ;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+}  
+
+
+/* 行動版時，調整列表樣式 */
+@media screen and (max-width: 576px){
+
+    .logoBar{
+        width: 520px;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .nav{
+        position: relative;
+        z-index: 1;
+    }
+
+    
+    .logoBarRight{
+        position: absolute;
+        width: 180px;
+        padding-right: 0;
+        left: 67%;
+        /* float: right; */
+    }
+    .logoBarRight ul{
+        width:180px;
+    }
+
+    .logoBarRight li{
+        padding-right: 20px;
+        display: inline-block;
+        text-decoration:none;
+    }
+    .logoBarRight .nVersion{
+        display: none;
+    }
+
+    .logoBarRight .phoneVersion{
+        display: inline-block;
+    }
+
+    .logo {
+        padding-top: 10px;
+        padding-left: 50px;
+    }
+
+    .fas, .far{
+        color: white;
+        font-size: 25px;
+    }
+
+    /* .far{
+        color: white;
+        font-size: 25px;
+    } */
+
+    .logoBarRight button{
+        background-color: #121212;
+        border: none;
+        color: #121212;
+        font-weight: bold;
+        padding: 0 ;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+}
+
+
+
+/* ===============NAV BAR SECTION=============== */
+
+
+.navbar{
+    background-color: #f56600;
+    text-align: center;
+    height: 45px;
+}
+
+.navbar ul{
+    padding-top: 15px;
+    display: inline-block;
+    background-color: #f56600;
+}
+
+.navbar li{ 
+    display: inline-block;
+    padding-right: 30px;
+    
+}
+
+.navbar li a{
+    color:white;
+    font-size: 15px;
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    .navbar{
+        display: block !important;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .navbar{
+        width: 100%;
+        display: block !important;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+    .navbar{
+        width: 100%;
+        display: none;
+    }
+    .navbar ul{
+        width: 100%;
+    }
+
+    .navbar li{
+        display: block;
+        padding-right: 0;
+        line-height:2;
+    }
+}   
+
+/* 行動版時，調整列表樣式 */
+@media screen and (max-width: 576px){
+    .navbar{
+        width: 100%;
+        display: none;
+    }
+
+    .navbar ul{
+        width: 100%;
+    }
+
+    .navbar li{
+        display: block;
+        padding-right: 0;
+        line-height:2;
+    }    
+}
+
+
 /* breadcrumb */
 
 .breadcrumb{
@@ -115,13 +431,15 @@ a{
     font-weight: lighter;
     display: flex;
     align-items: center;
+    padding: 20px;
 }
 
 .blog{
-    width: 1100px;
+    width: 100%;
     margin: 0 auto;
     background-color: #121212;
     color:white;
+    padding: 20px;
 }
 
 .wthblog{
@@ -153,11 +471,9 @@ h3{
     overflow: hidden;
     display: inline-block;
     clear: both;
-}
-.pic{
     width: 440px;
-    height: 238px;
 }
+
 
 .meta{
     margin-bottom: 10px;
@@ -189,6 +505,23 @@ h3{
     padding-bottom: 15px;
 }
 
+
+@media screen and (max-width: 991px){
+     .blogPic{
+         display: block;
+         width: 100%;
+         height: 300px;
+         padding-bottom: 20px;
+         
+         
+     }
+     .content{
+         display: block;
+         width: 100%;
+         padding-left: 0;
+         padding-top: 20px;
+     }
+}
 
 
 
@@ -254,6 +587,7 @@ h3{
    
    .ull{
     padding-right: 30px;
+    padding-bottom: 40px;
     line-height: 20px;
     text-align: left;
    }
@@ -278,6 +612,11 @@ h3{
     left: 40%;
     padding-top: 50px;
     
+}
+@media screen and (max-width: 991px){
+    .pagination{
+        left: 30%;
+    }
 }
 
 
