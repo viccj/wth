@@ -560,6 +560,7 @@ button {
     display: inline-block;
     width: 520px;
     margin-left: 10px;
+    /* border:1px solid green; */
     
 }
 
@@ -596,6 +597,7 @@ button {
     /* overflow: hidden; 超過範圍隱藏 */
     width:300px;
     padding-left: 20px;
+
    
 }
 @media screen and (min-width: 768px) and (max-width: 991px){
@@ -638,6 +640,44 @@ button {
     .upperight .asidetext .icontext{
         width: 300px;   
     }
+}
+@media screen and  (max-width: 767px){
+    .upperight .asidetext {
+        display: block;
+        padding-top: 20px;
+        /* border: 1px solid red; */
+        
+        
+    }
+    .upperight .asidepic {
+        display: block;
+        padding-top: 20px;
+        padding-left: 100px;
+        width: 100%;
+        /* border: 1px solid red; */
+        
+        
+    } 
+    .upperight .asidepic img{
+       
+        width: 190px;
+        
+        
+        
+    }
+    .upperight{
+        display: inline-block;
+        width: 100%;
+        margin-left: 10px;
+        /* border:1px solid green; */
+        
+    }
+    .upperight .asidepic img{
+        
+        max-width: 100%;
+        
+    }
+    
 }
 
 .fas{

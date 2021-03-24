@@ -384,7 +384,8 @@ div.view iframe{
 
 @media screen and (max-width:767px){
     .info{
-        width: 100%;
+        max-width: 100%;
+        /* border: 5px solid white; */
     }
 }
 
@@ -415,13 +416,14 @@ div.info div.text p.twenty{
         padding-left: 30px;
         display: inline-block;
         vertical-align: top;
+        
        
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px){
     .info{
-        width: 400px;
+        /* width: 400px; */
     }
     .moviePic{
         width: 250px;
@@ -435,14 +437,15 @@ div.info div.text p.twenty{
 @media screen and (max-width:767px){
     .moviePic{
         width: 250px;
-        padding-left: 100px;
+        padding-left: 50px;
         display: inline-block;
         vertical-align: top;
+        /* border: 1px solid red; */
         
     }
     .info{
         padding: 20px;
-        width: 500px;
+        /* width: 500px; */
         
         
     }
@@ -502,7 +505,7 @@ dd{
 }
 
 .description{
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     padding-top: 50px;
     margin-bottom: 25px;
@@ -512,10 +515,11 @@ dd{
 }
 
 .description p{
-    position: absolute;
+    /* border: 1px solid white; */
+    /* position: absolute; */
     font-size: 18px;
     line-height: 1.2;
-    max-width: 100%;
+    width: 100%;
 }
 
 

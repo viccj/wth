@@ -432,7 +432,7 @@ h3{
         overflow-x: auto;
     }
     .hotMovie li{
-        border: 1px solid white;
+        /* border: 1px solid white; */
         width: calc((100% - 50px) / 5);
         height: 350px;
         margin-right: 10px;

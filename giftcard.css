@@ -536,15 +536,15 @@ button {
         
     }
     .secondtext h3{
-        padding-left: 150px;
+        padding-left: 100px;
         padding-top: 20px;
     }
     .secondimg{
-        padding-left: 150px;
+        padding-left: 100px;
     }
     .secondimgN{
         display: block;
-        padding-left: 150px;
+        padding-left: 100px;
     }
     .secondimgP{
         display: none;
@@ -746,6 +746,16 @@ button {
     width: 518px;
     margin: 0 auto;
     padding-bottom: 50px;
+    
+}
+@media screen and (max-width: 768px){
+    .footerdes p{
+        padding: 20px;
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 50px;
+        
+    }
     
 }
 

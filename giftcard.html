@@ -238,6 +238,31 @@
         </div>
 
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+			// 點擊按鈕，選單縮放
+			$("button.btn_switch").on("click", function () {
+				$("div.navbar").slideToggle();
+			});
+		});
+            // =============== change the hambuger button ===============
+    var hamburgerBtn = document.getElementsByClassName('btn_switch')[0];
+    var hamburgerCls = document.getElementsByClassName('phoneVersion')[2];
+    console.log(hamburgerCls.style);
+    hamburgerBtn.addEventListener('click', function () {
+        if (hamburgerBtn.innerHTML == '<i class="fas fa-bars"></i>' || hamburgerCls.style.display == '') {
+            hamburgerBtn.innerHTML = '<i class="far fa-times-circle"></i>';
+            hamburgerCls.style.display = 'inline';
+            console.log(hamburgerBtn.innerHTML);
+        } else if (hamburgerBtn.innerHTML == '<i class="far fa-times-circle"></i>') {
+            hamburgerBtn.innerHTML = '<i class="fas fa-bars"></i>';
+        }
+
+    });
+    </script>
+
+
 
 </body>
 
